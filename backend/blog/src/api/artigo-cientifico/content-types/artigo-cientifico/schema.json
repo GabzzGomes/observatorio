@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artigo_cientificos",
+  "info": {
+    "singularName": "artigo-cientifico",
+    "pluralName": "artigo-cientificos",
+    "displayName": "Artigo Científico"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_artigo": {
+      "type": "uid",
+      "required": true
+    },
+    "capa": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "data_publicacao": {
+      "type": "date",
+      "required": true
+    },
+    "texto": {
+      "type": "richtext",
+      "required": true
+    },
+    "documentos_extras": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "texto_pesquisador": {
+      "type": "string"
+    },
+    "resumo": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

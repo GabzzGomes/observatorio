@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discentes",
+  "info": {
+    "singularName": "discente",
+    "pluralName": "discentes",
+    "displayName": "Discente"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "formacao": {
+      "type": "string",
+      "required": true
+    },
+    "ocupacao": {
+      "type": "string",
+      "required": true
+    },
+    "foto": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "lattesURL": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
